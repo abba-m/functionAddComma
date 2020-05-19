@@ -1,0 +1,1 @@
+**A vanilla function to add commas to number in counts of thousand**
