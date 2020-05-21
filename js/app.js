@@ -2,16 +2,14 @@
 0. Check if arg is a number
 1. convert num to array
 2. reverse num
-3. add comma after 3 every num 
+3. add comma after every 3 nums
 4. reverse the array back to origianal
 5. convert it back to a single num
 */
 
 const input = document.getElementById('input');
-const inputValue = input.value;
 const output = document.getElementById('output');
 
-//input.addEventListener('input', addComma(input.value));
 input.addEventListener('input', (e) => addComma(e.target.value));
 
 const addComma = (num) => {
@@ -35,8 +33,5 @@ const addComma = (num) => {
     
     numArray = reversedNumArray.reverse().join("");
     output.innerText = numArray;
-    //console.log(numArray);
 }
 
-
-//addComma('1234567896574764773737373');
