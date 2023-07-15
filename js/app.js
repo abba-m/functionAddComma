@@ -36,7 +36,7 @@ const addComma = (num) => {
 }
 
 function shuffleArray(arr) {
-    if (!array ? .length) return [];
+    if (!array?.length) return [];
 
     return arr.sort(() => Math.random() - 0.5);
 }
