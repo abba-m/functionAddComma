@@ -13,25 +13,30 @@ const output = document.getElementById('output');
 input.addEventListener('input', (e) => addComma(e.target.value));
 
 const addComma = (num) => {
-    
-    if(isNaN(num)) return output.innerText = "Enter a number";
+
+    if (isNaN(num)) return output.innerText = "Enter a number";
     //console.log('Starting operation...');
-    
-    let numArray= num.split("");
+
+    let numArray = num.split("");
 
     //Checks
     if (numArray[0] == 0) numArray.shift();
-    
+
 
     let reversedNumArray = numArray.slice().reverse();
 
     if (reversedNumArray.length > 3) reversedNumArray.splice(3, 0, ',');
 
-    for (let i = 7; i < reversedNumArray.length; i += 4){
+    for (let i = 7; i < reversedNumArray.length; i += 4) {
         reversedNumArray.splice(i, 0, ',')
     }
-    
+
     numArray = reversedNumArray.reverse().join("");
     output.innerText = numArray;
 }
 
+function shuffleArray(arr) {
+    if (!array ? .length) return [];
+
+    return arr.sort(() => Math.random() - 0.5);
+}
